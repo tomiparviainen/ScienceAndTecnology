@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An independent portfolio of research ideas, technologies, algorithms, and experiments.">
+  <title>Idea Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#ideas">Skip to ideas</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Idea Portfolio home">
+        <span class="brand-mark">IP</span>
+        <span data-site-title>Idea Portfolio</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#ideas">Ideas</a>
+        <a href="#about">About</a>
+        <a href="#license">License</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">RESEARCH · ENGINEERING · EXPLORATION</p>
+        <h1>Ideas worth <span>exploring.</span></h1>
+        <p class="hero-lede">A collection of concepts, prototypes, algorithms, and technical experiments. Browse an idea, inspect its description, and access its supporting files.</p>
+        <a class="primary-link" href="#ideas">Explore the ideas <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-core">IDEA<br>→ TEST<br>→ LEARN</div>
+        <span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span>
+      </div>
+    </section>
+
+    <section class="content-section" id="ideas">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Browse ideas</h2>
+          <p class="muted">Categories and idea entries are configured in <code>script.js</code>.</p>
+        </div>
+        <div class="collection-stats" aria-live="polite">
+          <span id="idea-count">0 ideas</span>
+          <span class="stat-separator">·</span>
+          <span id="category-count">0 categories</span>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span class="sr-only">Search ideas</span>
+          <span aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Search ideas, tags, descriptions…" autocomplete="off">
+        </label>
+        <label class="sort-box">
+          <span class="sr-only">Sort ideas</span>
+          <select id="sort-select">
+            <option value="featured">Featured first</option>
+            <option value="title">Title A–Z</option>
+            <option value="newest">Newest first</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="category-tabs" id="category-tabs" aria-label="Filter by category"></div>
+      <div class="idea-grid" id="idea-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No ideas match this search. Try another term or category.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="eyebrow">ABOUT THIS PORTFOLIO</p>
+        <h2>From concept to implementation.</h2>
+      </div>
+      <div class="about-copy">
+        <p>All ideas are my own and may be freely used, provided that the inventor is credited. No guarantees are given regarding the functionality or feasibility of the ideas.</p>
+        <p>For each idea, thera are provided a main image, extra images, a PDF description, source code, video animations, datasets, or other downloadable files.</p>
+      </div>
+    </section>
+
+    <section class="license-section" id="license">
+      <div>
+        <p class="eyebrow">REUSE & ATTRIBUTION</p>
+        <h2>Open by design.</h2>
+      </div>
+      <p>License for each idea is set deliberately. A website-wide code license does not automatically license every idea, image, PDF, or attached file.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="current-year"></span> <span data-author-name>Tomi Parviainen</span></span>
+    <span>Built with HTML, CSS & JavaScript</span>
+  </footer>
+
+  <dialog id="idea-dialog" class="idea-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="Close idea details">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <noscript><p class="noscript">This portfolio needs JavaScript enabled to display the idea collection.</p></noscript>
+</body>
+</html>
