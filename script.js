@@ -12,6 +12,25 @@
  * serverless endpoint. See README.md before enabling real tracking.
  */
 
+// --- ANALYTICS: ideakohtaiset tapahtumat ---
+
+function trackIdeaEvent(ideaId, action, title = "") {
+  if (!ideaId || !action) return;
+
+  if (
+    window.goatcounter &&
+    typeof window.goatcounter.count === "function"
+  ) {
+    window.goatcounter.count({
+      path: `events/${ideaId}/${action}`,
+      title: title || `${ideaId}: ${action}`,
+      event: true
+    });
+  } else {
+    console.warn("GoatCounter ei ole vielä käytettävissä.");
+  }
+}
+
 const SITE = {
   title: "Idea Portfolio",
   author: "Tomi Parviainen",
@@ -280,6 +299,12 @@ function renderIdeas() {
   });
 }
 function openIdea(id) {
+  trackIdeaEvent(
+    idea.id,
+    "view",
+    idea.title
+  );
+
   const idea = IDEAS.find(item => item.id === id);
   if (!idea) return;
   recordView(idea);
