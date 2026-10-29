@@ -299,14 +299,16 @@ function renderIdeas() {
   });
 }
 function openIdea(id) {
+function openIdea(id) {
+  const idea = IDEAS.find(item => item.id === id);
+  if (!idea) return;
+
   trackIdeaEvent(
     idea.id,
     "view",
     idea.title
   );
 
-  const idea = IDEAS.find(item => item.id === id);
-  if (!idea) return;
   recordView(idea);
   const stats = getLocalStats(idea.id);
   const hero = idea.image
