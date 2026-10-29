@@ -48,7 +48,7 @@ const IDEAS = [
   //  license: "MIT for source code; specify separate terms for documents and media."
   //},
   {
-    id: "idea-002",
+    id: "idea-003",
     title: "PRNG algorithm prototype",
     category: "algorithms",
     date: "2026-09-15",
@@ -93,11 +93,48 @@ const IDEAS = [
     gallery: [],
     tags: ["concept", "unverified"],
     files: [
+      { label: "Concept image (.png)", path: "assets/images/Idea_004_UniverseSpiralPhi.png", type: "png image" },
       { label: "Concept source file (.m)", path: "assets/files/Idea-004-UniverseSpiralPhi2.m", type: "MATLAB source file" },
       { label: "Concept note (.pdf)", path: "assets/files/Idea-004-ModelUniverse.pdf", type: "PDF source file" },
     ],
     license: "Specify terms for this idea and its attachments."
-  }
+  },
+    {
+    id: "idea-005",
+    title: "Optical point source tracker",
+    category: "technology",
+    date: "2026-10-10",
+    featured: false,
+    summary: "A shadow mask in the front of the optics, that enables direction finding of a point source",
+    description: "This is a premilinary concept, not fully modeled for stray light",
+    image: "assets/images/Idea_005_Laserangledetector.png",
+    gallery: [],
+    tags: ["concept", "unverified"],
+    files: [
+      { label: "Concept image (.png)", path: "assets/images/Idea_005_Laserangledetector.png", type: "png image" },
+      { label: "Concept note (.pdf)", path: "assets/files/Idea-005-Pointtracker.pdf", type: "PDF source file" },
+    ],
+    license: "Specify terms for this idea and its attachments."
+  },
+    {
+    id: "idea-006",
+    title: "Laser Beam Propagation Through Air",
+    category: "technology",
+    date: "2026-10-07",
+    featured: false,
+    summary: "A simulation of the irradiance profile of a laser beam focused at a specific distance.",
+    description: "In this artificial simulation, atmospheric turbulence—primarily caused by random variations in the refractive index of air—increases over a period of ten seconds",
+    image: "assets/images/Idea-006-Turbulence.png",
+    gallery: [],
+    tags: ["concept", "unverified"],
+    files: [
+      { label: "Concept image (.png)", path: "assets/images/Idea-006-Turbulence.png", type: "png image" },
+      { label: "Concept video (.mp4)", path: "assets/files/Idea-006-turbulence3.mp4", type: "mp4 video" },
+      { label: "Concept note (.pdf)", path: "assets/files/Idea-006-Laserbeampropagation.pdf", type: "PDF source file" },
+    ],
+    license: "MIT"
+  },
+
 ];
 
 // Optional analytics event hook. A real backend must implement the API you choose.
