@@ -119,7 +119,7 @@ const IDEAS = [
     {
     id: "idea-006",
     title: "Laser Beam Propagation Through Air",
-    category: "technology",
+    category: "algorithms",
     date: "2026-10-07",
     featured: false,
     summary: "A simulation of the irradiance profile of a laser beam focused at a specific distance.",
@@ -134,6 +134,41 @@ const IDEAS = [
     ],
     license: "MIT"
   },
+      {
+    id: "idea-007",
+    title: "Low cost radio telescoope",
+    category: "technology",
+    date: "2026-09-20",
+    featured: false,
+    summary: "Calculated model of diffractive hydrogen line radiotelescope",
+    description: "This is an idea of tape structured diffractive mirror",
+    image: "assets/images/Idea-007-radiomirror.png",
+    gallery: [],
+    tags: ["concept", "unverified"],
+    files: [
+      { label: "Concept image (.png)", path: "assets/images/Idea-007-radiomirror.png", type: "png image" },
+      { label: "Concept note (.pdf)", path: "assets/files/Idea-007-lowcostradioreflector.pdf", type: "PDF source file" },
+    ],
+    license: "MIT"
+  },
+  {
+    id: "idea-008",
+    title: "A single-mode laser system for high-precision material processing",
+    category: "technology",
+    date: "2026-09-19",
+    featured: false,
+    summary: "An array of 81 single-mode, 100 W continuous-wave (CW) fiber lasers.",
+    description: "Programmable High-Power Optical Waveform Synthesis for Material Processing Using a Phase-Controlled Array of Spectrally Spaced Continuous-Wave Fiber Lasers",
+    image: "assets/images/Idea-008-pulsetrain.png",
+    gallery: [],
+    tags: ["concept", "unverified"],
+    files: [
+      { label: "Concept image (.png)", path: "assets/images/Idea-008-pulsetrain.png", type: "png image" },
+      { label: "Concept note (.pdf)", path: "assets/files/Idea-008-materialprocessinglaser.pdf", type: "PDF source file" },
+    ],
+    license: "MIT"
+  }
+
 
 ];
 
