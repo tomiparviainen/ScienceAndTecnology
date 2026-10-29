@@ -298,7 +298,7 @@ function renderIdeas() {
     button.addEventListener("click", () => openIdea(button.dataset.openIdea));
   });
 }
-function openIdea(id) {
+
 function openIdea(id) {
   const idea = IDEAS.find(item => item.id === id);
   if (!idea) return;
